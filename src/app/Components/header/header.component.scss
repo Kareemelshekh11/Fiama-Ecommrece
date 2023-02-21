@@ -1,0 +1,12 @@
+@import '../../../variables.scss';
+
+
+.header-area {
+    z-index: 999;
+    position: relative;
+
+    .header-middle-area{
+        padding-top: 15px;
+        padding-bottom: 15px;        
+    }
+}
