@@ -2,8 +2,301 @@
     <div class="header-middle-area">
         <div class="container">
             <div class="row">
-                
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                   <div class="logo">
+                    <a href="">
+                        <img src="assets/images/logo.png">
+                    </a>
+                   </div>
+                </div>
+                <div class="col-lg-8 col-md-6 header-contact-search">
+                    <div class="row">
+                       <div class="col-md-3">
+                        <div class="header-feature-item">
+                            <div class="icon">
+                                <i class="icon-phone"></i>
+                            </div>
+                            <div class="info">
+                                <h6>phone</h6>
+                                <p>
+                                    <a href="#">+0123-456-789</a>
+                                </p>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-md-9">
+                        <div class="header-search">
+                            <form>
+                                <input type="text" name="search" value placeholder="Search here...">
+                                <button type="submit">
+                                    <span>
+                                        <i class="icon-magnifier"></i>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                   <div class="header-options">
+                    <ul>
+                        <li>
+                            <div class="mini-cart">
+                                <a class="utilize-toggle" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <span class="cart-icon">
+                                        <i class="icon-handbag"></i>
+                                        <sup>2</sup>
+                                    </span>
+                                    <h6>
+                                        <span>Your Cart</span>
+                                        <span class="secondary-color">$89.25</span>
+                                    </h6>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-navbar">
+                                <a role="button"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                    <i class="icon-menu"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col justify-content-center">
+                    <div class="header-menu">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                              <a class="navbar-brand" href="#">
+                                <img src="assets/images/logo.png">
+                              </a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                                        <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                                        <li><a class="dropdown-item" href="#">Portfolio Details</a></li>
+                                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                        <li><a class="dropdown-item" href="#">Google Map Locations</a></li>
+                                        <li><a class="dropdown-item" href="#">404</a></li>
+                                        <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Shop
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Shop</a></li>
+                                      <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                                      <li><a class="dropdown-item" href="#">Shop Details</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      portfolio
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">portfolio</a></li>
+                                      <li><a class="dropdown-item" href="#">portfolio details</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      News
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">News</a></li>
+                                      <li><a class="dropdown-item" href="#">News Grid</a></li>
+                                      <li><a class="dropdown-item" href="#">News Details</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">contact</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </header>
+
+
+
+<div class="offcanvas offcanvas-end scrollbar" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <span class="offcanvas-title" id="offcanvasRightLabel">cart</span>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body scrollbar">
+        <div class="cart-products scrollbar">
+            <div class="cart-item clearfix">
+        <div class="cart-item-img">
+            <a href="#">
+                <img src="assets/images/1.png">
+            </a>
+            <span class="cart-item-delete" role="button">
+                <i class="icon-trash"></i>
+            </span>
+        </div>
+        <div class="cart-item-info">
+            <h6>
+                <a href="#">Premium Joyful</a>
+            </h6>
+            <span class="cart-item-quantity">1 x $65.00</span>
+        </div>
+            </div>
+            <div class="cart-item clearfix">
+        <div class="cart-item-img">
+            <a href="#">
+                <img src="assets/images/2.png">
+            </a>
+            <span class="cart-item-delete" role="button">
+                <i class="icon-trash"></i>
+            </span>
+        </div>
+        <div class="cart-item-info">
+            <h6>
+                <a href="#">The White Rose</a>
+            </h6>
+            <span class="cart-item-quantity">1 x $85.00</span>
+        </div>
+            </div>
+            <div class="cart-item clearfix">
+        <div class="cart-item-img">
+            <a href="#">
+                <img src="assets/images/3.png">
+            </a>
+            <span class="cart-item-delete" role="button">
+                <i class="icon-trash"></i>
+            </span>
+        </div>
+        <div class="cart-item-info">
+            <h6>
+                <a href="#">Red Rose Bouquet</a>
+            </h6>
+            <span class="cart-item-quantity">1 x $92.00</span>
+        </div>
+            </div>
+            <div class="cart-item clearfix">
+        <div class="cart-item-img">
+            <a href="#">
+                <img src="assets/images/4.png">
+            </a>
+            <span class="cart-item-delete" role="button">
+                <i class="icon-trash"></i>
+            </span>
+        </div>
+        <div class="cart-item-info">
+            <h6>
+                <a href="#">Pink Flower Tree</a>
+            </h6>
+            <span class="cart-item-quantity">1 x $68.00</span>
+        </div>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-sub-total">
+                <h5>
+                    Subtotal: 
+                    <span>$310.00</span>
+                </h5>
+            </div>
+            <div class="btn-wrapper">
+                <a href="#" class="theme-btn-1 btn btn-effect-1">View Cart</a>
+                <a href="#" class="theme-btn-2 btn btn-effect-2">Checkout</a>
+            </div>
+            <p>Free Shipping on All Orders Over $100!</p>
+        </div> 
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start nav-mobile" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <div class="logo">
+        <img src="assets/images/logo.png">
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="form-search-mobile">
+        <form action="">
+            <input type="text" placeholder="Search...">
+            <button>
+                <i class="icon-magnifier"></i>
+            </button>
+        </form>
+      </div>
+      <div class="menu">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="dropdown">
+                <span class="menu-expand"></span>
+                <a href="#" class="dropdown-toggle" type="button" data-bs-toggle="dropdown">Pages</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">About Us</a></li>
+                    <li class="dropdown-item"><a href="#">Portfolio</a></li>
+                    <li class="dropdown-item"><a href="#">Portfolio Details</a></li>
+                    <li class="dropdown-item"><a href="#">FAQ</a></li>
+                    <li class="dropdown-item"><a href="#">Google Map Locations</a></li>
+                    <li class="dropdown-item"><a href="#">404</a></li>
+                    <li class="dropdown-item"><a href="#">Coming Soon</a></li>                    
+                </ul>
+            </li>
+            <li class="dropdown">
+                <span class="menu-expand"></span>
+                <a href="#" class="dropdown-toggle" type="button" data-bs-toggle="dropdown">Shop</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">Shop</a></li>
+                    <li class="dropdown-item"><a href="#">Shop Grid</a></li>
+                    <li class="dropdown-item"><a href="#">Shop Details</a></li>                  
+                </ul>
+            </li>
+            <li class="dropdown">
+                <span class="menu-expand"></span>
+                <a href="#" class="dropdown-toggle" type="button" data-bs-toggle="dropdown">Portfolio</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#" >Portfolio</a></li>
+                    <li class="dropdown-item"><a href="#" >Portfolio Detalis</a></li>                
+                </ul>
+            </li>
+            <li class="dropdown">
+                <span class="menu-expand"></span>
+                <a href="#" class="dropdown-toggle" type="button" data-bs-toggle="dropdown">News</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">News</a></li>
+                    <li class="dropdown-item"><a href="#">News Grid</a></li>
+                    <li class="dropdown-item"><a href="#">News Detalis</a></li>                
+                </ul>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
