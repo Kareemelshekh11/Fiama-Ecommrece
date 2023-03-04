@@ -22,6 +22,14 @@ import { ContactComponent } from './Components/contact/contact.component';
 import { CartComponent } from './Components/cart/cart.component';
 import { CheckoutComponent } from './Components/checkout/checkout.component';
 import { BrandsComponent } from './Components/brands/brands.component';
+import { ScrollTopComponent } from './Components/scroll-top/scroll-top.component';
+import { FaqComponent } from './Components/faq/faq.component';
+import { AccountComponent } from './Components/account/account.component';
+import { WishlistComponent } from './Components/wishlist/wishlist.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { QuickViewComponent } from './quick-view/quick-view.component';
+import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 
 @NgModule({
   declarations: [
@@ -45,11 +53,19 @@ import { BrandsComponent } from './Components/brands/brands.component';
     ContactComponent,
     CartComponent,
     CheckoutComponent,
-    BrandsComponent
+    BrandsComponent,
+    ScrollTopComponent,
+    FaqComponent,
+    AccountComponent,
+    WishlistComponent,
+    QuickViewComponent,
+    AddToCartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
