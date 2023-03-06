@@ -30,6 +30,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { QuickViewComponent } from './quick-view/quick-view.component';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
+import { SliderProductsComponent } from './slider-products/slider-products.component';
+import { SliderNewsComponent } from './slider-news/slider-news.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -59,13 +62,16 @@ import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
     AccountComponent,
     WishlistComponent,
     QuickViewComponent,
-    AddToCartComponent
+    AddToCartComponent,
+    SliderProductsComponent,
+    SliderNewsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

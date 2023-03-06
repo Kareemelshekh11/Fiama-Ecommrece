@@ -20,6 +20,10 @@ img {
     background-color: #fdfdfd;
 }
 
+.section-bg-1{
+background-color: #f9f9f9;
+}
+
 .ltn__border {
     border: 1px solid #f0f0f0;
 }
@@ -86,6 +90,10 @@ a{
     }
 }
 
+.section-bg-5 {
+    background-color: #272829;
+}
+
 .btn-wrapper {
     display: block;
     margin-top: 30px;
@@ -137,6 +145,27 @@ ul {
 
 .pt-65 {
     padding-top: 65px;
+}
+
+.plr--5{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pb-30{
+    padding-bottom: 30px;
+}
+
+.pb-35{
+    padding-bottom: 35px;
+}
+
+.pt-35{
+    padding-top: 35px;
 }
 
 @media (min-width: 1200px){

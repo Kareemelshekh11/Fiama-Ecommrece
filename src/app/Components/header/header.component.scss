@@ -199,8 +199,7 @@
                     align-self: center;
                     height: 100%;
                     float: left;
-                    transition: all 0.3s ease 0s;
-                    display: none;      
+                    transition: all 0.3s ease 0s;    
                 }
 
                 .navbar-nav{
@@ -254,6 +253,18 @@
             }
         }
     }
+}
+
+.sticky{
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    background-color: #fff;
+    left: 0;
+    position: fixed;
+    line-height: 8px;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
 }
 
 //cart-side

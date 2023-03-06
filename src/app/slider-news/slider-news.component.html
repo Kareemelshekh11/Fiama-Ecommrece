@@ -1,0 +1,36 @@
+<div class="blog-area  pt-60 pb-30">
+    <div class="container">
+        <div class="section-title-area text-center">
+        <h1 class="section-border section-title">latest news</h1>
+        </div>
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let slide of slides">
+                <div class="blog-item">
+                  <div class="blog-img">
+                    <a routerLink="/blog-details">
+                        <img src={{slide.Image}}>
+                    </a>
+                  </div>
+                  <div class="blog-brief">
+                    <div class="blog-meta">
+                        <ul>
+                            <li>
+                                <span> Nov 18, 2020</span>
+                            </li>
+                            <li class="blog-comment">
+                                <a href="#">
+                                    <i class="icon-speech"></i>
+                                    2
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="blog-title blog-title-line">
+                        <a href="/blog-details">Lorem ipsum dolor sit amet con adipisicing elit sed </a>
+                    </h3>
+                  </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>

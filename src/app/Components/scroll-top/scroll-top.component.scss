@@ -1,0 +1,31 @@
+@import '../../../variables.scss';
+
+
+.top{
+    position: fixed;
+    background-color: #f9f9f9;
+    color: $heading-color;
+    bottom: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    border: none;
+    right: 3%;
+    text-align: center;
+    transform: rotate(45deg);
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 1px 6px 0px rgba(32,33,36,.28);
+
+    i{
+        transform: rotate(-45deg);
+        font-size: 16px;
+        padding-left: 1px;
+    }
+
+    &:hover{
+        background-color: $secondary-color;
+        color: #fff;
+        transition: all 0.3s ease 0s;
+    }
+}

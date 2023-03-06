@@ -1,31 +1,31 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-
 @Component({
-  selector: 'app-brands',
-  templateUrl: './brands.component.html',
-  styleUrls: ['./brands.component.scss']
+  selector: 'app-slider-products',
+  templateUrl: './slider-products.component.html',
+  styleUrls: ['./slider-products.component.scss']
 })
-export class BrandsComponent {
+export class SliderProductsComponent {
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
+    dots: true,
     navSpeed: 700,
     margin:35,
     responsive: {
       0: {
-        items: 2
+        items: 1
       },
       400: {
-        items: 4
+        items: 2
       },
       740: {
-        items: 4
+        items: 2
       },
       940: {
-        items: 6
+        items: 4
       }
     },
   }

@@ -29,8 +29,6 @@ const routes: Routes = [
   {path:'portfolio-details' , component:PortfolioDetailsComponent},
   {path:'locations' , component:GoogleLocationComponent},
   {path:'coming-soon' , component:ComingSoonComponent},
-  {path:'**' , component:NotfoundComponent},
-  {path:'404' , component:NotfoundComponent},
   {path:'shop' , component:ShopComponent},
   {path:'shop-grid' , component:ShopGridComponent},
   {path:'shop-details' , component:ShopDetailsComponent},
@@ -43,7 +41,9 @@ const routes: Routes = [
   {path:'faq' , component:FaqComponent},
   {path:'brands' , component:BrandsComponent},
   {path:'account' , component:AccountComponent},
-  {path:'wishlist' , component:WishlistComponent}
+  {path:'wishlist' , component:WishlistComponent},
+  {path:'**' , component:NotfoundComponent},
+  {path:'404' , component:NotfoundComponent},
 ];
 
 @NgModule({
