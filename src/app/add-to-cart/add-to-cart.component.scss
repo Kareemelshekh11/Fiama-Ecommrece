@@ -41,6 +41,31 @@
             }
 
         }
+
+        a{
+            position: relative;
+            
+
+            &::after{
+                width: 0%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: #fff;
+                content: '';
+                position: absolute;
+                z-index: -1;
+                transition: all 0.3s;
+            }
+
+            &:hover::after{
+                width: 100% !important;
+            }
+
+            &:hover{
+                border: 1px solid #000;
+            }
+        }
     }
 
     .additional-info{

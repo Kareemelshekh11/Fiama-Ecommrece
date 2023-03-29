@@ -1,0 +1,91 @@
+@import '../../../variables.scss';
+
+.breadcrumb-area {
+    background-color: #f0f0f0;
+    margin-bottom: 100px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+
+    .page-title {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 0;
+    }
+
+    .breadcrumb-list {
+
+        ul{
+            margin: 0;
+            padding: 0;
+
+            li{
+                display: inline-block;
+                margin-right: 30px;
+                position: relative;
+                font-weight: 500;
+                font-size: 14px;
+                margin-top: 5px;
+                color: $paragraph-color;
+                
+                &:first-child{
+
+                    &::after{
+                        position: absolute;
+                        content: "\f054";
+                        font-family: 'Font Awesome 6 Free';
+                        font-weight: 900;
+                        font-size: 10px;
+                        right: -20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                &:last-child{
+                    margin-right: 0;
+                    color: $paragraph-color !important;
+                }
+            }
+        }
+        
+    }
+}
+
+.error-404-inner{
+    .error-404-title {
+        font-size: 120px;
+        line-height: 1;
+        color: $secondary-color;
+        margin-bottom: 10px;
+
+        @media (max-width: 991px){
+            font-size: 100px;
+        }
+    
+    }
+
+    h2 {
+        margin-bottom: 20px;
+
+        @media (max-width: 991px){
+            font-size: 20px;
+        }
+    }
+
+    .btn-wrapper {
+        margin-top: 50px;
+
+        a{
+            i{
+                font-size: 12px;
+                margin-right: 2px;
+
+            }
+
+            &:hover{
+                background-color: $secondary-color;
+                color: #fff;
+            }
+        }
+    }
+}

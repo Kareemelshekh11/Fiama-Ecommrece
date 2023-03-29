@@ -33,6 +33,9 @@ import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { SliderProductsComponent } from './slider-products/slider-products.component';
 import { SliderNewsComponent } from './slider-news/slider-news.component';
 import { RouterModule } from '@angular/router';
+import { LoginComponent } from './Components/login/login.component';
+import { RegisterComponent } from './Components/register/register.component';
+import { OrderComponent } from './Components/order/order.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +67,10 @@ import { RouterModule } from '@angular/router';
     QuickViewComponent,
     AddToCartComponent,
     SliderProductsComponent,
-    SliderNewsComponent
+    SliderNewsComponent,
+    LoginComponent,
+    RegisterComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

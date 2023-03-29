@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 p{
     color: $paragraph-color;
     font-family: $paragraph-font;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 1.5em;
     font-size: 16px;
 
@@ -59,6 +59,10 @@ p{
 
 .mt--65 {
     margin-top: -65px;
+}
+
+.mb-70{
+    margin-bottom: 70px;
 }
 
 a{
@@ -122,7 +126,15 @@ a{
     z-index: 1;
     margin-right: 15px;
 
-    
+    @media only screen and (max-width: 767px){
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px){
+        padding: 12px 25px;
+    }
+
 }
 
 ul li {
@@ -135,8 +147,25 @@ ul {
     padding-left: 0;
 }
 
+
 .mt-80 {
     margin-top: 80px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mb-120 {
+    margin-bottom: 120px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
 }
 
 .pb-40 {
@@ -145,6 +174,14 @@ ul {
 
 .pt-65 {
     padding-top: 65px;
+}
+
+.pt-170{
+    padding-top: 170px;
+}
+
+.pb-150{
+    padding-bottom: 150px;
 }
 
 .plr--5{
@@ -156,6 +193,22 @@ ul {
     padding-top: 60px;
 }
 
+.pt-95{
+    padding-top: 95px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mt-115{
+    margin-top: 115px;
+}
+
 .pb-30{
     padding-bottom: 30px;
 }
@@ -164,8 +217,31 @@ ul {
     padding-bottom: 35px;
 }
 
+.pb-80{
+    padding-bottom: 80px;
+}
+
 .pt-35{
     padding-top: 35px;
+}
+
+.pt-90{
+    padding-top: 90px;
+}
+
+.pb-70{
+    padding-bottom: 70px;
+}
+
+.btn-border {
+    border: 2px solid #ebeeee;
+    box-shadow: none;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,.28);
+    border-color: #ddd;
 }
 
 @media (min-width: 1200px){
@@ -180,3 +256,20 @@ ul {
     }
 }
 
+@media (max-width: 991px) and (min-width: 768px){
+    h1{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    h3{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    p{
+        font-size: 14px;
+    }
+}

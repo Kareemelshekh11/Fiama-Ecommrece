@@ -1,0 +1,250 @@
+@import '../../../variables.scss';
+
+.breadcrumb-area {
+    background-color: #f0f0f0;
+    margin-bottom: 100px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+
+    .page-title {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 0;
+    }
+
+    .breadcrumb-list {
+
+        ul{
+            margin: 0;
+            padding: 0;
+
+            li{
+                display: inline-block;
+                margin-right: 30px;
+                position: relative;
+                font-weight: 500;
+                font-size: 14px;
+                margin-top: 5px;
+                color: $paragraph-color;
+                
+                &:first-child{
+
+                    &::after{
+                        position: absolute;
+                        content: "\f054";
+                        font-family: 'Font Awesome 6 Free';
+                        font-weight: 900;
+                        font-size: 10px;
+                        right: -20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                &:last-child{
+                    margin-right: 0;
+                    color: $paragraph-color !important;
+                }
+            }
+        }
+        
+    }
+}
+
+.faq-inner{
+
+    .card{
+        margin: 0 0 -2px 0;
+        border: 2px solid;
+        border-color: #ebeeee;
+        border-radius: 0;
+
+        .card-title{
+            background-color: transparent;
+            position: relative;
+            padding: 20px 60px 20px 40px;
+            transition: .3s;
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 0;
+
+            &::before{
+                position: absolute;
+                content: "\e604";
+                font-family: 'simple-line-icons';
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #f9f9f9;
+                color: $main-color;
+                font-size: 16px;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                line-height: 40px;
+            }
+
+            &[aria-expanded="true"]:before {
+                content: "\e607";
+                color: $secondary-color;
+            }
+
+            &[aria-expanded="true"]{
+                background-color: transparent;
+                color: $main-color;
+            }
+        }
+
+        .card-body{
+            padding: 15px 40px 25px;
+        }
+    }
+}
+
+.need-support{
+    h4{
+        font-size: 20px;
+        font-weight: 500;
+
+        @media screen and (max-width: 1099px){
+            font-size: 17px !important;
+        }
+    }
+
+    .btn:hover{
+        color: #fff !important;
+        background-color: $secondary-color !important;
+    }
+}
+
+.sidebar-area{
+    margin-top: 0;
+
+    
+
+    .widget {
+        margin-bottom: 40px;
+
+        .widget-title{
+            font-size: 18px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #ececec;
+            text-transform: capitalize;
+            padding-bottom: 5px;
+            font-weight: 500;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .menu-widget{
+
+        ul{
+            padding: 0;
+            margin: 0;
+
+            li{
+                list-style: none;
+                margin-top: 10px;
+                font-family: $paragraph-font;
+
+                a{
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+    }
+
+    .color-widget{
+        ul{
+            padding: 0;
+            margin: 0;
+
+            li{
+                list-style: none;
+                display: inline-block;
+                margin-top: 3px;
+                margin-right: 5px;
+                border: 1px solid #f0f0f0;
+                height: 30px;
+                width: 30px;
+                border-radius: 100%;
+
+                &:hover{
+                    outline: 2px solid $secondary-color;
+                    outline-offset: 1px;
+                }
+
+                a{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .tag-widget{
+        ul{
+            padding: 0;
+            margin: 0;
+
+            li{
+                list-style: none;
+                display: inline-block;
+                margin-right: 20px;
+                margin-top: 1rem;
+                position: relative;
+                
+                a{
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: $paragraph-font;                    
+                }
+
+                &::before{
+                    position: absolute;
+                    content: "";
+                    right: -12px;
+                    top: 50%;
+                    width: 1px;
+                    height: 18px;
+                    background-color: $body-color;
+                    transform: translateY(-50%) rotate(20deg);                    
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1099px){
+        margin-top: 100px !important;
+    }
+}
+
+.theme {
+    background-color: $secondary-color;
+}
+
+.green-2 {
+    background-color: #9ac45c;
+}
+
+.blue-2 {
+    background-color: #6d5cc4;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.yellow {
+    background-color: #ffff00;
+}

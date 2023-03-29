@@ -10,12 +10,15 @@ import { ContactComponent } from './Components/contact/contact.component';
 import { FaqComponent } from './Components/faq/faq.component';
 import { GoogleLocationComponent } from './Components/google-location/google-location.component';
 import { HomeComponent } from './Components/home/home.component';
+import { LoginComponent } from './Components/login/login.component';
 import { NewsDetailsComponent } from './Components/news-details/news-details.component';
 import { NewsGridComponent } from './Components/news-grid/news-grid.component';
 import { NewsComponent } from './Components/news/news.component';
 import { NotfoundComponent } from './Components/notfound/notfound.component';
+import { OrderComponent } from './Components/order/order.component';
 import { PortfolioDetailsComponent } from './Components/portfolio-details/portfolio-details.component';
 import { PortfolioComponent } from './Components/portfolio/portfolio.component';
+import { RegisterComponent } from './Components/register/register.component';
 import { ShopDetailsComponent } from './Components/shop-details/shop-details.component';
 import { ShopGridComponent } from './Components/shop-grid/shop-grid.component';
 import { ShopComponent } from './Components/shop/shop.component';
@@ -39,6 +42,10 @@ const routes: Routes = [
   {path:'cart' , component:CartComponent},
   {path:'checkout' , component:CheckoutComponent},
   {path:'faq' , component:FaqComponent},
+  {path:'login' , component:LoginComponent},
+  {path:'register' , component:RegisterComponent},
+  {path:'order' , component:OrderComponent},
+  {path:'login' , component:LoginComponent},
   {path:'brands' , component:BrandsComponent},
   {path:'account' , component:AccountComponent},
   {path:'wishlist' , component:WishlistComponent},
