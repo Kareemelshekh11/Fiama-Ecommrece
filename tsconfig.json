@@ -16,6 +16,7 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "noImplicitAny": false,
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
@@ -30,6 +31,7 @@
     "strictInputAccessModifiers": true,
     "strictNullChecks": false,
     "strictDomEventTypes": false,
+    "strict":false,
     "strictTemplates": true
   }
 }

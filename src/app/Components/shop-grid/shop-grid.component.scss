@@ -1,0 +1,8 @@
+@import '../shop/shop.component.scss';
+
+.product-area .shop-options ul {
+
+    @media screen and (max-width: 575px){
+        justify-content: space-evenly !important;
+    }
+}

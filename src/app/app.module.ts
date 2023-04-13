@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { MaterialModule } from './material/material.module';
+import {MatNativeDateModule} from '@angular/material/core';
 import { AppComponent } from './app.component';
 import { SliderComponent } from './Components/slider/slider.component';
 import { HomeComponent } from './Components/home/home.component';
@@ -36,6 +39,7 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './Components/login/login.component';
 import { RegisterComponent } from './Components/register/register.component';
 import { OrderComponent } from './Components/order/order.component';
+
 
 @NgModule({
   declarations: [
@@ -77,8 +81,12 @@ import { OrderComponent } from './Components/order/order.component';
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
-    RouterModule
+    RouterModule,
+    NgxUsefulSwiperModule,
+    MaterialModule,
+    MatNativeDateModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

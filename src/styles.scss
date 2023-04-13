@@ -233,6 +233,10 @@ ul {
     padding-bottom: 70px;
 }
 
+.pb-60{
+    padding-bottom: 60px;
+}
+
 .btn-border {
     border: 2px solid #ebeeee;
     box-shadow: none;
@@ -242,6 +246,31 @@ ul {
     background-color: transparent;
     box-shadow: 0 1px 6px 0 rgba(32,33,36,.28);
     border-color: #ddd;
+}
+
+.nice-select {
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #e8e8e8;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    height: 42px;
+    line-height: 40px;
+    outline: 0;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left!important;
+    transition: all .2s ease-in-out;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
 }
 
 @media (min-width: 1200px){
@@ -272,4 +301,52 @@ ul {
     p{
         font-size: 14px;
     }
+}
+
+@media (max-width: 767px){
+    h3 {
+    font-size: 18px !important;
+    }
+
+    h5 {
+        font-size: 16px !important;
+    }
+
+    h4 {
+        font-size: 17px !important;
+    }
+}
+
+//angular material custom style
+
+.mat-mdc-form-field-subscript-wrapper {
+    display: none;
+}
+
+mat-form-field{
+    line-height: 1;
+
+    mat-label{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.mdc-list-item__primary-text{
+    font-size: 14px !important;
+}
+
+.mat-mdc-select-min-line{
+    font-size: 14px !important;
+} 
+    
+mat-tab-header{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: #ececec;
+    margin-bottom: 30px;
+}
+
+.mat-mdc-tab-body-content {
+    overflow: hidden !important;
 }

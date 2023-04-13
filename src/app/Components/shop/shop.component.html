@@ -1,1 +1,792 @@
-<p>shop works!</p>
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-inner text-center">
+                    <h1 class="page-title">Shop</h1>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li>
+                                <a routerLink="/home">Home</a>
+                            </li>
+                            <li>Shop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 order-lg-2 mb-100">
+                <div class="shop-options">
+                    <ul>
+                        <li>
+                            <div class="showing-product-number text-right">
+                                <span>Showing 9 of 20 results</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="short-by text-center">
+                                <mat-form-field appearance="fill">
+                                    <mat-label>Make A Selection</mat-label>
+                                    <mat-select>
+                                      <mat-option *ngFor="let select of selects" [value]="select.value">
+                                        {{select.viewValue}}
+                                      </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div class="grid-list-tab-menu">
+                                <div class="icons-nav">
+                                    <a role="button" class="show active" id="btn1" data-bs-toggle="tab">
+                                        <i class="icon-grid"></i>
+                                    </a>
+                                    <a role="button" id="btn2" data-bs-toggle="tab">
+                                        <i class="icon-menu"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class=" tab-pane fade active show" id="liton_product_grid" >
+                        <div class="product-grid-view">
+                            <div class="row">
+                                <div class="col-xl-4 col-sm-6 col-12">
+                                    <div class="product-item text-center">
+                                        <div class="product-img">
+                                         <a routerLink="/shop-details">
+                                             <img src="assets/images/1.png">
+                                         </a>
+                                         <div class="product-badge">
+                                             <ul>
+                                                 <li class="badge-2">10%</li>
+                                             </ul>
+                                         </div>
+                                         <div class="product-hover-action">
+                                             <ul>
+                                                 <li>
+                                                     <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                         <i class="icon-magnifier"></i>
+                                                     </a>
+                                                 </li>
+                                                 <li class="add-to-cart">
+                                                     <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+                                                        <span class="cart-text d-xl-block">ADD TO CART</span> 
+                                                     </a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                         <i class="icon-shuffle"></i>
+                                                     </a>
+                                                 </li>
+                                             </ul>
+                                         </div>
+                                        </div>
+                                        <div class="product-info">
+                                         <h2 class="product-title">
+                                             <a routerLink="/shop-details">
+                                                 pink flower tree
+                                             </a>
+                                         </h2>
+                                         <div class="product-price">
+                                             <span>$18.00</span>
+                                             <del>$21.00</del>
+                                         </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 col-12">
+                                    <div class="product-item text-center">
+                                        <div class="product-img">
+                                         <a routerLink="/shop-details">
+                                             <img src="assets/images/2.png">
+                                         </a>
+                                         <div class="product-badge">
+                                             <ul>
+                                                 <li class="badge-1">Hot</li>
+                                             </ul>
+                                         </div>
+                                         <div class="product-hover-action">
+                                             <ul>
+                                                 <li>
+                                                     <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                         <i class="icon-magnifier"></i>
+                                                     </a>
+                                                 </li>
+                                                 <li class="add-to-cart">
+                                                     <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+                                                        <span class="cart-text d-xl-block">ADD TO CART</span> 
+                                                     </a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                         <i class="icon-shuffle"></i>
+                                                     </a>
+                                                 </li>
+                                             </ul>
+                                         </div>
+                                        </div>
+                                        <div class="product-info">
+                                         <h2 class="product-title">
+                                             <a routerLink="/shop-details">
+                                                 Premium Joyful
+                                             </a>
+                                         </h2>
+                                         <div class="product-price">
+                                             <span>$18.00</span>
+                                         </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 col-12">
+                                    <div class="product-item text-center">
+                                        <div class="product-img">
+                                         <a routerLink="/shop-details">
+                                             <img src="assets/images/3.png">
+                                         </a>
+                                         <div class="product-badge">
+                                             <ul>
+                                                 <li class="badge-2">%12</li>
+                                             </ul>
+                                         </div>
+                                         <div class="product-hover-action">
+                                             <ul>
+                                                 <li>
+                                                     <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                         <i class="icon-magnifier"></i>
+                                                     </a>
+                                                 </li>
+                                                 <li class="add-to-cart">
+                                                     <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+                                                        <span class="cart-text d-xl-block">ADD TO CART</span> 
+                                                     </a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                         <i class="icon-shuffle"></i>
+                                                     </a>
+                                                 </li>
+                                             </ul>
+                                         </div>
+                                        </div>
+                                        <div class="product-info">
+                                         <h2 class="product-title">
+                                             <a routerLink="/shop-details">
+                                                 THE WHITE ROSE
+                                             </a>
+                                         </h2>
+                                         <div class="product-price">
+                                             <span>$16.00</span>
+                                             <del>$19.00</del>
+                                         </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 col-12">
+                                    <div class="product-item text-center">
+                                       <div class="product-img">
+                                        <a routerLink="/shop-details">
+                                            <img src="assets/images/4.png">
+                                        </a>
+                                        <div class="product-badge">
+                                            <ul>
+                                                <li class="badge-1">Hot</li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-hover-action">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                        <i class="icon-magnifier"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="add-to-cart">
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+                                                       <span class="cart-text d-xl-block">ADD TO CART</span> 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                        <i class="icon-shuffle"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                       </div>
+                                       <div class="product-info">
+                                        <h2 class="product-title">
+                                            <a routerLink="/shop-details">
+                                                RED ROSE BOUQUET
+                                            </a>
+                                        </h2>
+                                        <div class="product-price">
+                                            <span>$20.00</span>
+                                        </div>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 col-12">
+                                    <div class="product-item text-center">
+                                       <div class="product-img">
+                                        <a routerLink="/shop-details">
+                                            <img src="assets/images/5.png">
+                                        </a>
+                                        <div class="product-badge">
+                                            <ul>
+                                                <li class="badge-1">Hot</li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-hover-action">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                        <i class="icon-magnifier"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="add-to-cart">
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+                                                       <span class="cart-text d-xl-block">ADD TO CART</span> 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                        <i class="icon-shuffle"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                       </div>
+                                       <div class="product-info">
+                                        <h2 class="product-title">
+                                            <a routerLink="/shop-details">
+                                                HEART'S DESIRE
+                                            </a>
+                                        </h2>
+                                        <div class="product-price">
+                                            <span>$15.00</span>
+                                        </div>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 col-12">
+                                    <div class="product-item text-center">
+                                       <div class="product-img">
+                                        <a routerLink="/shop-details">
+                                            <img src="assets/images/6.png">
+                                        </a>
+                                        <div class="product-badge">
+                                            <ul>
+                                                <li class="badge-2">%15</li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-hover-action">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                        <i class="icon-magnifier"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="add-to-cart">
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+                                                       <span class="cart-text d-xl-block">ADD TO CART</span> 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                        <i class="icon-shuffle"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                       </div>
+                                       <div class="product-info">
+                                        <h2 class="product-title">
+                                            <a routerLink="/shop-details">
+                                                ASSORTED ROSES
+                                            </a>
+                                        </h2>
+                                        <div class="product-price">
+                                            <span>$17.00</span>
+                                        </div>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 col-12">
+                                    <div class="product-item text-center">
+                                       <div class="product-img">
+                                        <a routerLink="/shop-details">
+                                            <img src="assets/images/7.png">
+                                        </a>
+                                        <div class="product-badge">
+                                            <ul>
+                                                <li class="badge-1">Hot</li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-hover-action">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                        <i class="icon-magnifier"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="add-to-cart">
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+                                                       <span class="cart-text d-xl-block">ADD TO CART</span> 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                        <i class="icon-shuffle"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                       </div>
+                                       <div class="product-info">
+                                        <h2 class="product-title">
+                                            <a routerLink="/shop-details">
+                                                ROSES SURPRISE
+                                            </a>
+                                        </h2>
+                                        <div class="product-price">
+                                            <span>$12.00</span>
+                                        </div>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 col-12">
+                                    <div class="product-item text-center">
+                                       <div class="product-img">
+                                        <a routerLink="/shop-details">
+                                            <img src="assets/images/8.png">
+                                        </a>
+                                        <div class="product-badge">
+                                            <ul>
+                                                <li class="badge-1">%12</li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-hover-action">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                        <i class="icon-magnifier"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="add-to-cart">
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+                                                       <span class="cart-text d-xl-block">ADD TO CART</span> 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                        <i class="icon-shuffle"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                       </div>
+                                       <div class="product-info">
+                                        <h2 class="product-title">
+                                            <a routerLink="/shop-details">
+                                                TROPICAL PEACE LILY
+                                            </a>
+                                        </h2>
+                                        <div class="product-price">
+                                            <span>$14.00</span>
+                                            <del>$25.00</del>
+                                        </div>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 col-12">
+                                    <div class="product-item text-center">
+                                       <div class="product-img">
+                                        <a routerLink="/shop-details">
+                                            <img src="assets/images/9.png">
+                                        </a>
+                                        <div class="product-badge">
+                                            <ul>
+                                                <li class="badge-1">%12</li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-hover-action">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                        <i class="icon-magnifier"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="add-to-cart">
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+                                                       <span class="cart-text d-xl-block">ADD TO CART</span> 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                        <i class="icon-shuffle"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                       </div>
+                                       <div class="product-info">
+                                        <h2 class="product-title">
+                                            <a routerLink="/shop-details">
+                                                TROPICAL PEACE LILY
+                                            </a>
+                                        </h2>
+                                        <div class="product-price">
+                                            <span>$14.00</span>
+                                            <del>$25.00</del>
+                                        </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" tab-pane fade" id="liton_product_list">
+                        <div class="product-list-view">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a routerLink="/shop-details">
+                                                <img src="assets/images/2.png" alt="#">
+                                            </a>
+                                            <div class="product-badge">
+                                                <ul>
+                                                    <li class="badge-1">Hot</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h2 class="product-title">
+                                                <a routerLink="/shop-details">Red Rose Bouquet</a>
+                                            </h2>
+                                            <div class="product-price">
+                                                <span>$16</span>
+                                            </div>
+                                            <div class="product-ratting">
+                                                <ul>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-brief">
+                                                <p> 
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Recusandae asperiores sit odit nesciunt,  aliquid, deleniti
+                                                    non et ut dolorem!
+                                                </p>
+                                            </div>
+                                            <div class="product-hover-action">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                            <i class="icon-magnifier"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="add-to-cart">
+                                                        <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+                                                           <span class="cart-text">ADD TO CART</span> 
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                            <i class="icon-shuffle"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a routerLink="/shop-details">
+                                                <img src="assets/images/1.png" alt="#">
+                                            </a>
+                                            <div class="product-badge">
+                                                <ul>
+                                                    <li class="badge-2">%12</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h2 class="product-title">
+                                                <a routerLink="/shop-details">Red Rose Bouquet</a>
+                                            </h2>
+                                            <div class="product-price">
+                                                <span>$16</span>
+                                                <del>$19</del>
+                                            </div>
+                                            <div class="product-ratting">
+                                                <ul>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-brief">
+                                                <p> 
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Recusandae asperiores sit odit nesciunt,  aliquid, deleniti
+                                                    non et ut dolorem!
+                                                </p>
+                                            </div>
+                                            <div class="product-hover-action">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                            <i class="icon-magnifier"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="add-to-cart">
+                                                        <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+                                                           <span class="cart-text">ADD TO CART</span> 
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                            <i class="icon-shuffle"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a routerLink="/shop-details">
+                                                <img src="assets/images/4.png" alt="#">
+                                            </a>
+                                            <div class="product-badge">
+                                                <ul>
+                                                    <li class="badge-1">Hot</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h2 class="product-title">
+                                                <a routerLink="/shop-details">Red Rose Bouquet</a>
+                                            </h2>
+                                            <div class="product-price">
+                                                <span>$16</span>
+                                            </div>
+                                            <div class="product-ratting">
+                                                <ul>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    <li><a href="#"><i class="icon-star"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-brief">
+                                                <p> 
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Recusandae asperiores sit odit nesciunt,  aliquid, deleniti
+                                                    non et ut dolorem!
+                                                </p>
+                                            </div>
+                                            <div class="product-hover-action">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                            <i class="icon-magnifier"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="add-to-cart">
+                                                        <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+                                                           <span class="cart-text">ADD TO CART</span> 
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                                            <i class="icon-shuffle"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination-area text-center">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="icon-arrow-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">...</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-100">
+                <aside class="sidebar">
+                    <div class="widget search-widget">
+                        <form action="">
+                            <input type="text" name="search" placeholder="Search your keyword...">
+                            <button type="submit">
+                                <i class="icon-magnifier"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="widget price-widget">
+                        <h4 class="widget-title">Price</h4>
+                        <div class="price-filter">
+                            <input type="submit" value="Your range:">
+                            <mat-slider min="50" max="5000" step="1" discrete [displayWith]="formatLabel">
+                                <input value="50" matSliderStartThumb>
+                                <input value="1500" matSliderEndThumb>
+                            </mat-slider>
+                        </div>
+                    </div>
+                    <div class="widget menu-widget">
+                        <h4 class="widget-title">Categories</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Clothing</a>
+                            </li>
+                            <li>
+                                <a href="#">Bags</a>
+                            </li>
+                            <li>
+                                <a href="#">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="#">Jewelry</a>
+                            </li>
+                            <li>
+                                <a href="#">Acessories</a>
+                            </li>
+                            <li>
+                                <a href="#">Food / Drink Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Gift Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Acessories</a>
+                            </li>
+                            <li>
+                                <a href="#">Watch</a>
+                            </li>
+                            <li>
+                                <a href="#">Uncategorized</a>
+                            </li>
+                            <li>
+                                <a href="#">Other</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget color-widget">
+                        <h4 class="widget-title">Color</h4>
+                        <ul>
+                            <li class="theme">
+                                <a href="#"></a>
+                            </li>
+                            <li class="green-2">
+                                <a href="#"></a>
+                            </li>
+                            <li class="blue-2">
+                                <a href="#"></a>
+                            </li>
+                            <li class="white">
+                                <a href="#"></a>
+                            </li>
+                            <li class="red">
+                                <a href="#"></a>
+                            </li>
+                            <li class="yellow">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget tag-widget">
+                        <h4 class="widget-title">Tags</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Popular</a>
+                            </li>
+                            <li>
+                                <a href="#">Design</a>
+                            </li>
+                            <li>
+                                <a href="#">Ux</a>
+                            </li>
+                            <li>
+                                <a href="#">Usability</a>
+                            </li>
+                            <li>
+                                <a href="#">Develop</a>
+                            </li>
+                            <li>
+                                <a href="#">Icon</a>
+                            </li>
+                            <li>
+                                <a href="#">Car</a>
+                            </li>
+                            <li>
+                                <a href="#">Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Repairs</a>
+                            </li>
+                            <li>
+                                <a href="#">Auto Parts</a>
+                            </li>
+                            <li>
+                                <a href="#">Oil</a>
+                            </li>
+                            <li>
+                                <a href="#">Dealer</a>
+                            </li>
+                            <li>
+                                <a href="#">Oil Change</a>
+                            </li>
+                            <li>
+                                <a href="#">Body Color</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
