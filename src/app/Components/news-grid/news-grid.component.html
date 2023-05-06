@@ -1,1 +1,88 @@
-<p>news-grid works!</p>
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-inner text-center">
+                    <h1 class="page-title">Blog</h1>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li>
+                                <a routerLink="/home">Home</a>
+                            </li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blog-area pb-100">
+    <div class="container">
+        <div class="section-title-area text-center">
+        <h1 class="section-border section-title">latest news</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6" *ngFor="let slide of slides">
+                <div class="blog-item">
+                    <div class="blog-img">
+                      <a routerLink="/blog-details">
+                          <img src={{slide.Image}}>
+                      </a>
+                    </div>
+                    <div class="blog-brief">
+                      <div class="blog-meta">
+                          <ul>
+                              <li>
+                                  <span> Nov 18, 2020</span>
+                              </li>
+                              <li class="blog-comment">
+                                  <a href="#">
+                                      <i class="icon-speech"></i>
+                                      2
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <h3 class="blog-title blog-title-line">
+                          <a href="/blog-details">Lorem ipsum dolor sit amet con adipisicing elit sed </a>
+                      </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="pagination-area text-center">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="icon-arrow-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">...</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-brands></app-brands>

@@ -1,1 +1,227 @@
-<p>news works!</p>
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-inner text-center">
+                    <h1 class="page-title">Blog</h1>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li>
+                                <a routerLink="/home">Home</a>
+                            </li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blog-area mb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-sm-6" *ngFor="let slide of slides">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                              <a routerLink="/blog-details">
+                                  <img src={{slide.Image}}>
+                              </a>
+                            </div>
+                            <div class="blog-brief">
+                              <div class="blog-meta">
+                                  <ul>
+                                      <li>
+                                          <span> Nov 18, 2020</span>
+                                      </li>
+                                      <li class="blog-comment">
+                                          <a href="#">
+                                              <i class="icon-speech"></i>
+                                              2
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <h3 class="blog-title blog-title-line">
+                                  <a href="/blog-details">Lorem ipsum dolor sit amet con adipisicing elit sed </a>
+                              </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="pagination-area text-center">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-arrow-left"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">...</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-arrow-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <aside class="sidebar blog-sidebar">
+                    <div class="widget search-widget">
+                        <form action="">
+                            <input type="text" name="search" placeholder="Search ...">
+                            <button type="submit">
+                                <i class="icon-magnifier"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="widget author-widget">
+                        <div class="author-widget-inner">
+                            <img src="assets/images/author-2.jpg">
+                            <h5>Rosalina D. Willaimson</h5>
+                            <h6>Head of Company, SEO</h6>
+                        </div>
+                    </div>
+                    <div class="widget popular-post-widget">
+                        <h4 class="widget-title">Recent Post</h4>
+                        <ul>
+                           <li *ngFor=" let Recent of Recents">
+                             <div class="popular-post-widget-item clearfix">
+                                <div class="popular-post-widget-img">
+                                    <a routerLink="/news-details">
+                                        <img src={{Recent.Image}}>
+                                    </a>
+                                </div>
+                                <div class="popular-post-widget-brief">
+                                    <div class="blog-meta">
+                                        <ul>
+                                            <li>
+                                                <span>Nov 18, 2020</span>
+                                            </li>
+                                            <li>
+                                                <div class="blog-comment">
+                                                    <a href="#">
+                                                        <i class="icon-speech"></i>
+                                                        2
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h6 class="blog-title blog-title-line">
+                                        <a routerLink="/news-details">Lorem ipsum dolor sit cing elit, sed do.</a>
+                                    </h6>
+                                </div>
+                             </div>
+                           </li>
+                        </ul>
+                    </div>
+                    <div class="widget menu-widget">
+                        <h4 class="widget-title">Categories</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Clothing</a>
+                            </li>
+                            <li>
+                                <a href="#">Bags</a>
+                            </li>
+                            <li>
+                                <a href="#">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="#">Jewelry</a>
+                            </li>
+                            <li>
+                                <a href="#">Acessories</a>
+                            </li>
+                            <li>
+                                <a href="#">Food / Drink Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Gift Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Acessories</a>
+                            </li>
+                            <li>
+                                <a href="#">Watch</a>
+                            </li>
+                            <li>
+                                <a href="#">Uncategorized</a>
+                            </li>
+                            <li>
+                                <a href="#">Other</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget tag-widget">
+                        <h4 class="widget-title">Tags</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Popular</a>
+                            </li>
+                            <li>
+                                <a href="#">Design</a>
+                            </li>
+                            <li>
+                                <a href="#">Ux</a>
+                            </li>
+                            <li>
+                                <a href="#">Usability</a>
+                            </li>
+                            <li>
+                                <a href="#">Develop</a>
+                            </li>
+                            <li>
+                                <a href="#">Icon</a>
+                            </li>
+                            <li>
+                                <a href="#">Car</a>
+                            </li>
+                            <li>
+                                <a href="#">Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Repairs</a>
+                            </li>
+                            <li>
+                                <a href="#">Auto Parts</a>
+                            </li>
+                            <li>
+                                <a href="#">Oil</a>
+                            </li>
+                            <li>
+                                <a href="#">Dealer</a>
+                            </li>
+                            <li>
+                                <a href="#">Oil Change</a>
+                            </li>
+                            <li>
+                                <a href="#">Body Color</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-brands></app-brands>

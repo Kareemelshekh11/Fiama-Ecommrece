@@ -213,8 +213,16 @@ ul {
     padding-bottom: 30px;
 }
 
+.pb-100{
+    padding-bottom: 100px;
+}
+
 .pb-35{
     padding-bottom: 35px;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
 }
 
 .pb-80{
@@ -237,9 +245,58 @@ ul {
     padding-bottom: 60px;
 }
 
+.pt-15 {
+    padding-top: 15px !important;
+}
+
+.m-0 {
+    margin: 0!important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
 .btn-border {
     border: 2px solid #ebeeee;
     box-shadow: none;
+}
+
+blockquote {
+    font-size: 18px;
+    font-family: $paragraph-font;
+    line-height: 1.6;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    padding: 30px 40px 30px 35px;
+    margin: 50px 0 50px 0px;
+    position: relative;
+    z-index: 1;
+    font-style: italic;
+    border-left: 3px solid $secondary-color;
+
+    h6{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 1px solid #f1f1f1;
 }
 
 .btn-transparent {
@@ -317,6 +374,38 @@ ul {
     }
 }
 
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"], textarea {
+    background-color: #f7f7f7;
+    border: none;
+    border-color: #e4ecf2;
+    height: 50px;
+    box-shadow: none;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 0;
+    padding-right: 40px;
+
+    &::placeholder{
+        font-size: 14px;
+        color: #000;
+    }
+}
+
+textarea {
+    resize: vertical;
+    padding: 15px 20px;
+    min-height: 150px;
+}
+
+@media (max-width: 767px){
+    .shop-details-tab-content-inner {
+        padding: 50px 20px 30px;
+    }
+}
+
 //angular material custom style
 
 .mat-mdc-form-field-subscript-wrapper {
@@ -350,3 +439,4 @@ mat-tab-header{
 .mat-mdc-tab-body-content {
     overflow: hidden !important;
 }
+

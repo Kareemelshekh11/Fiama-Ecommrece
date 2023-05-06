@@ -94,6 +94,15 @@ width: 80%;
     overflow: visible;
 }
 
+.dots{
+    padding-left: 2rem;
+
+    li{
+       list-style: disc;
+       display: list-item;
+    }
+}
+
 .fade {
     transition: opacity .15s linear;
 }
@@ -116,6 +125,24 @@ width: 80%;
         background-color: #f1f1f1;
         text-align: center;
         transform: translate(50%);
+    }
+}
+
+.title-2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 290px;
+        height: 1px;
+        background-color: #f1f1f1;
     }
 }
 
@@ -173,6 +200,13 @@ hr {
         margin-right: 30px;
         max-width: 80px;
 
+        @media (max-width: 767px){
+            float: inherit;
+            margin-right: 0;
+            max-width: 80px;
+            margin-bottom: 20px;
+        }
+
         img{
             border-radius: 100%;
         }
@@ -209,6 +243,11 @@ hr {
     right: 20px;
     background-color: $secondary-color;
     color: #fff;
+
+    @media (max-width:767px) {
+        position: inherit;
+        font-size: 12px;
+    }
 }
 
 .modal-product-info{
@@ -530,4 +569,59 @@ input.cart-plus-minus-box {
     font-size: 16px;
     color: $heading-color;
     font-weight: 500;
+}
+
+.add-review {
+    display: flex;
+    align-items: center;
+
+    h6 {
+        margin-bottom: 0;
+        margin-right: 15px;
+        font-weight: 500;
+        font-size: 16px;
+    }    
+}
+
+.input-item {
+    position: relative;
+
+    textarea , input{
+        border-color: #f0f4f7;
+        background-color: #f4f7fc;
+        outline: 0;
+
+        &::placeholder{
+            font-size: 14px;
+            color: #000;
+        }
+    }
+}
+
+.btn-wrapper{
+    button{
+        position: relative;
+        text-transform: uppercase;
+        
+        
+        &::after{
+            width: 0%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #fff;
+            content: '';
+            position: absolute;
+            z-index: -1;
+            transition: all 0.3s;
+        }
+
+        &:hover::after{
+            width: 100% !important;
+        }
+
+        &:hover{
+            border: 1px solid #000;
+        }
+    }
 }

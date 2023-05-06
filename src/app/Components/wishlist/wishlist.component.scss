@@ -1,0 +1,15 @@
+@import '../cart/cart.component.scss';
+
+
+.cart-product-btn{
+    button{
+        padding: 5px 23px;
+        font-weight: 400;
+        font-size: 15px;
+
+        &:hover{
+            background-color: $secondary-color;
+            color: #fff;
+        }
+    }
+}

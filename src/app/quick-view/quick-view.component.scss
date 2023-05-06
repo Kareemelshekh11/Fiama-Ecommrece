@@ -280,20 +280,14 @@
                                     width: 120px;
                                     text-align: center;
                                     width: 130px;
-
-                                    .dec.qtybutton {
-                                        float: left;
-                                    }
-
-                                    .inc.qtybutton {
-                                        float: right;
-                                    }
+                                    display: flex;
+                                    justify-content: space-evenly;
                                 }
 
                                 .cart-plus-minus, .dec.qtybutton, .inc.qtybutton {
                                     background-color: #f7f7f7;
                                     border-color: #f7f7f7;
-                                    font-size: 17px;
+                                    font-size: 20px;
                                     font-weight: 400;
                                 }
                             }
