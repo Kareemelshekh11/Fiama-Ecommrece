@@ -1,1 +1,217 @@
-<p>account works!</p>
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-inner text-center">
+                    <h1 class="page-title">Account</h1>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li>
+                                <a routerLink="/home">Home</a>
+                            </li>
+                            <li>Account</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wishlist-area pb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="product-tab-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="tab-menu-list mb-50">
+                                    <div class="tabs">
+                                        <a role="button" class="active show" id="btn1"  data-bs-toggle="tab">
+                                            Dashboard
+                                            <i class="fas fa-home"></i>
+                                        </a>
+                                        <a role="button" id="btn2" data-bs-toggle="tab">
+                                            Orders
+                                            <i class="fas fa-file-alt"></i>
+                                        </a>
+                                        <a role="button" id="btn3"  data-bs-toggle="tab">
+                                            Downloads
+                                            <i class="fas fa-arrow-down"></i>
+                                        </a>
+                                        <a role="button" id="btn4"  data-bs-toggle="tab">
+                                            Address 
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </a>
+                                        <a role="button" id="btn5" data-bs-toggle="tab">
+                                            Account Details 
+                                            <i class="fas fa-user"></i>
+                                        </a>
+                                        <a routerLink="/login">
+                                            Logout 
+                                            <i class="fas fa-sign-out-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade active show" id="liton_tab_1_1">
+                                        <div class="myaccount-tab-content-inner">
+                                            <p>
+                                                Hello
+                                                <strong>UserName</strong>
+                                                (not <strong>UserName</strong>
+                                                ? 
+                                                <small><a routerLink="/login">Log out</a></small>
+                                                )
+                                            </p>
+                                            <p>
+                                                From your account dashboard you can view your recent orders,
+                                                manage your shipping and billing addresses, and edit your 
+                                                password and account details.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="liton_tab_1_2">
+                                        <div class="myaccount-tab-content-inner">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Order</th>
+                                                            <th>Date</th>
+                                                            <th>Status</th>
+                                                            <th>Total</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Jun 22, 2019</td>
+                                                            <td>Pending</td>
+                                                            <td>$3000</td>
+                                                            <td><a routerLink="/cart">View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Nov 22, 2019</td>
+                                                            <td>Approved</td>
+                                                            <td>$200</td>
+                                                            <td><a routerLink="/cart">View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Jan 12, 2020</td>
+                                                            <td>On Hold</td>
+                                                            <td>$900</td>
+                                                            <td><a routerLink="/cart">View</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="liton_tab_1_3">
+                                        <div class="myaccount-tab-content-inner">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Product</th>
+                                                            <th>Date</th>
+                                                            <th>Expire</th>
+                                                            <th>Download</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Carsafe - Car Service PSD Template</td>
+                                                            <td>Nov 22, 2020</td>
+                                                            <td>Yes</td>
+                                                            <td>Download File</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Carsafe - Car Service HTML Template</td>
+                                                            <td>Nov 10, 2020</td>
+                                                            <td>Yes</td>
+                                                            <td>Download File</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Carsafe - Car Service WordPress Theme</td>
+                                                            <td>Nov 12, 2020</td>
+                                                            <td>Yes</td>
+                                                            <td>Download File</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="liton_tab_1_4">
+                                        <div class="myaccount-tab-content-inner">
+                                            <p>The following addresses will be used on the checkout page by default.</p>
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-30">
+                                                    <h4>
+                                                        Billing Address 
+                                                        <small><a href="#">edit</a></small>
+                                                    </h4>
+                                                    <address>
+                                                        <p><strong>Alex Tuntuni</strong></p>
+                                                        <p>
+                                                            1355 Market St, Suite 900
+                                                            <br>
+                                                            San Francisco, CA 94103
+                                                        </p>
+                                                        <p>Mobile: (123) 456-7890</p>
+                                                    </address>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-30">
+                                                    <h4>
+                                                        Shipping Address 
+                                                        <small><a href="#">edit</a></small>
+                                                    </h4>
+                                                    <address>
+                                                        <p><strong>Alex Tuntuni</strong></p>
+                                                        <p>
+                                                            1355 Market St, Suite 900
+                                                            <br>
+                                                            San Francisco, CA 94103
+                                                        </p>
+                                                        <p>Mobile: (123) 456-7890</p>
+                                                    </address>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="liton_tab_1_5">
+                                        <div class="myaccount-tab-content-inner">
+                                            <p>
+                                                Hello
+                                                <strong>UserName</strong>
+                                                (not <strong>UserName</strong>
+                                                ? 
+                                                <small><a routerLink="/login">Log out</a></small>
+                                                )
+                                            </p>
+                                            <p>
+                                                From your account dashboard you can view your recent orders,
+                                                manage your shipping and billing addresses, and edit your 
+                                                password and account details.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-brands></app-brands>
